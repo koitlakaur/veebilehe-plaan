@@ -1,9 +1,5 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+// Funktsioon menüü kuvamiseks ja peitmiseks
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show'); // Lisab/eemaldab 'show' klassi
+}
