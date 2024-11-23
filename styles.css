@@ -50,12 +50,12 @@ body {
     align-items: center;
     z-index: 9;
     padding-top: 50px;
-    transform: translateY(-100%);
+    transform: translateY(-100%); /* Peidetud alguses */
     transition: transform 0.3s ease-in-out;
 }
 
 .menu.show {
-    transform: translateY(0);
+    transform: translateY(0); /* Kui lisatakse 'show' klass, liigub menüü ekraanile */
 }
 
 .menu ul {
