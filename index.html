@@ -1,37 +1,17 @@
-<!DOCTYPE html>
-<html lang="et">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Võrkpalli Blogi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Burger menüü -->
-    <div class="menu-container">
-        <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div id="menu" class="menu">
-            <ul>
-                <li><a href="#">Avaleht</a></li>
-                <li><a href="#">Võistlused</a></li>
-                <li><a href="#">Mängijad</a></li>
-                <li><a href="#">Blogi postitused</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Blogi sisu -->
-    <div class="content">
-        <h1>Võrkpalli Blogi</h1>
-        <p>Tere tulemast võrkpalli blogisse! Siit leiate värskeimad uudised, intervjuud ja palju muud võrkpalli kohta.</p>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
