@@ -6,56 +6,15 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Burger menüü */
-.menu-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
+/* Menüükonteiner */
+.menu {
     background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-}
-
-.burger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    justify-content: space-between;
-}
-
-.bar {
-    height: 4px;
-    width: 100%;
-    background-color: white;
-}
-
-/* Menüükonteiner */
-.menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 9;
-    padding-top: 50px;
-    transform: translateY(-100%); /* Peidetud alguses */
-    transition: transform 0.3s ease-in-out;
-}
-
-.menu.show {
-    transform: translateY(0); /* Kui lisatakse 'show' klass, liigub menüü ekraanile */
+    padding: 10px 0;
 }
 
 .menu ul {
@@ -66,20 +25,27 @@ body {
 }
 
 .menu ul li {
-    margin: 20px 0;
+    display: inline;
+    margin: 0 20px;
 }
 
 .menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
 /* Sisu stiil */
 .content {
     padding: 20px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px; /* Veenduge, et sisu ei kattuks menüüga */
 }
 
 h1 {
