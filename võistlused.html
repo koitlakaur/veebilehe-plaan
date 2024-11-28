@@ -3,67 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Võistlused - Võrkpalliblogi</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Võistlused | Võrkpalliblogi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Võrkpallivõistlused</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Avaleht</a></li>
-                <li><a href="/võistlused">Võistlused</a></li>
-                <li><a href="/blogi">Blogi</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Menüükonteiner -->
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Avaleht</a></li>
+            <li><a href="#news">Uudised</a></li>
+            <li><a href="#competitions">Võistlused</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
 
-    <main>
-        <section id="võistlused">
-            <h2>Üksikud Võistlused</h2>
+    <!-- Sisu -->
+    <div class="content" id="competitions">
+        <h1>Võrkpalli Võistlused</h1>
+        <p>Siit lehelt leiad ülevaate tulevastest võrkpallivõistlustest ja tulemuste kohta.</p>
 
-            <div class="võistlus">
-                <h3>Võistlus 1: Tallinn Open 2024</h3>
-                <p><strong>Aeg:</strong> 15. detsember 2024</p>
-                <p><strong>Kohalike meeskondade registreerimine:</strong> 10. detsember 2024</p>
-                <p><strong>Kohad:</strong> Tallinn, Kalevi Spordihall</p>
+        <!-- Võistluste nimekiri -->
+        <div class="competition-list">
+            <div class="competition">
+                <h2>Võistlus 1: Eesti Meistrivõistlused</h2>
+                <p><strong>Kuupäev:</strong> 15. detsember 2024</p>
+                <p><strong>Koht:</strong> Tallinna Spordihoone</p>
+                <p><strong>Osalejad:</strong> Eesti parimad võrkpallimeeskonnad</p>
+            </div>
+            
+            <div class="competition">
+                <h2>Võistlus 2: Balti Liiga</h2>
+                <p><strong>Kuupäev:</strong> 22. detsember 2024</p>
+                <p><strong>Koht:</strong> Tartu Ülikooli Spordihoone</p>
+                <p><strong>Osalejad:</strong> Eesti, Läti ja Leedu meeskonnad</p>
             </div>
 
-            <div class="võistlus">
-                <h3>Võistlus 2: Pärnu Cup 2024</h3>
-                <p><strong>Aeg:</strong> 25. detsember 2024</p>
-                <p><strong>Kohalike meeskondade registreerimine:</strong> 20. detsember 2024</p>
-                <p><strong>Kohad:</strong> Pärnu, Spordikompleks</p>
+            <div class="competition">
+                <h2>Võistlus 3: Rahvusvaheline Turniir</h2>
+                <p><strong>Kuupäev:</strong> 10. jaanuar 2025</p>
+                <p><strong>Koht:</strong> Pärnu Spordihoone</p>
+                <p><strong>Osalejad:</strong> Euroopa tipptasemel võrkpallimeeskonnad</p>
             </div>
+        </div>
+    </div>
 
-            <!-- Siia saab lisada rohkem võistlusi -->
-        </section>
+    <!-- Kontakt -->
+    <div class="contact-container" id="contact">
+        <h2>Kontaktige meid</h2>
+        <p>Võite meiega ühendust võtta, kui teil on küsimusi või tagasisidet võistluste kohta.</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Teie nimi" required>
+            <input type="email" name="email" placeholder="Teie e-mail" required>
+            <textarea name="message" placeholder="Teie sõnum" required></textarea>
+            <button type="submit">Saada</button>
+        </form>
+    </div>
 
-        <section id="uus-võistlus">
-            <h2>Lisa uus võistlus</h2>
-            <form id="võistlus-form">
-                <label for="nimi">Võistluse nimi:</label>
-                <input type="text" id="nimi" name="nimi" required>
+    <!-- Sotsiaalmeedia lingid -->
+    <div class="social-links">
+        <h2>Jälgi meid</h2>
+        <div class="social-icon">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        </div>
+        <div class="social-icon">
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+        <div class="social-icon">
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </div>
 
-                <label for="kuupaev">Kuupäev:</label>
-                <input type="date" id="kuupaev" name="kuupaev" required>
-
-                <label for="registreerimine">Registreerimise tähtaeg:</label>
-                <input type="date" id="registreerimine" name="registreerimine" required>
-
-                <label for="koht">Kohad:</label>
-                <input type="text" id="koht" name="koht" required>
-
-                <button type="submit">Lisa võistlus</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Võrkpalliblogi</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
