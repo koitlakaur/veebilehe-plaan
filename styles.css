@@ -80,13 +80,13 @@ body {
 
 /* Pealkirjad */
 h1 {
-    color: #e70d0d;
+    color: #73b2ca;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #b44747;
+    color: #8dc1ca;
     font-size: 1.6em;
 }
 
@@ -200,4 +200,115 @@ h2 {
     .social-links h2 {
         font-size: 1.2em;
     }
+}
+
+/* Postituste konteiner */
+.posts-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(135deg, #f4f4f4, #ffffff);
+}
+
+.posts-container h1 {
+    font-size: 2.8em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Postituse stiil */
+.post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.post-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #2c3e50;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Postituste ja piltide paigutus */
+@media (max-width: 768px) {
+    .posts-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .post-title {
+        font-size: 1.8em;
+    }
+
+    .post-content {
+        font-size: 1em;
+    }
+}
+
+/* Päise ja menüü stiil (üksikud muudatused, et hoida ühtne stiil) */
+h1 {
+    font-size: 3em;
+    color: #73b2ca;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #8dc1ca;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Üldine stiil */
+body {
+    font-family: "kanit", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontaktivormi konteiner (kui see on veel vajalik) */
+.contact-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
 }
