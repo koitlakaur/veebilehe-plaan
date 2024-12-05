@@ -371,3 +371,12 @@ h2 {
     .calendar ul li {
         font-size: 1em;
     }
+
+    /* Pildi stiil */
+.contact-image img {
+    max-width: 100%; /* Pilt ei ületa oma konteineri laius, et ta ei läheks välja */
+    height: auto; /* Hoidke pildi kõrgus proportsioonis */
+    display: block; /* Eemaldab pildi all oleva vahemaa */
+    margin: 0 auto; /* Keskendab pildi horisontaalselt */
+    max-width: 500px; /* Muudame pildi laius maksimaalselt 500px */
+}
