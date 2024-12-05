@@ -3,30 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Võistlused</title>
+    <title>Võistlused - Võrkpalli Blogi</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menüükonteiner -->
-    <div class="menu">
-        <ul>
-            <li><a href="#">Avaleht</a></li>
-            <li><a href="#">Blogi</a></li>
-            <li><a href="#">Võistlused</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </div>
 
-    <!-- Sisu -->
+    <!-- Võistluste sisu -->
     <div class="content">
         <h1>Võrkpalli Võistlused</h1>
         <p>Siit lehelt leiad infot kõikide tulevaste ja varasemate võrkpallivõistluste kohta. Hoia end kursis järgmiste üritustega!</p>
 
-        <!-- Võistluste loend ja kalender -->
+        <!-- Tulevased võistlused -->
         <div class="competition-list">
             <h2>Tulevased Võistlused</h2>
-
-            <!-- Kalender -->
             <div class="calendar">
                 <div class="calendar-header">
                     <span>Detsember 2024</span>
@@ -36,37 +25,25 @@
                         <strong>Võistlus:</strong> Eesti Meistrivõistlused<br>
                         <strong>Kuupäev:</strong> 15. detsember 2024<br>
                         <strong>Aeg:</strong> 10:00<br>
-                        <strong>Asukoht:</strong> Tallinna Spordihoone<br>
-                        <strong>Kirjeldus:</strong> Eesti parimad võrkpallurid võistlevad tiitli nimel.
+                        <strong>Asukoht:</strong> Tallinna Spordihoone
                     </li>
                     <li>
                         <strong>Võistlus:</strong> Eesti Karikavõistlused<br>
                         <strong>Kuupäev:</strong> 20. detsember 2024<br>
                         <strong>Aeg:</strong> 14:00<br>
-                        <strong>Asukoht:</strong> Tartu Läänemere Spordi Keskus<br>
-                        <strong>Kirjeldus:</strong> Meeskonnad võistlevad Eesti karika nimel.
+                        <strong>Asukoht:</strong> Tartu Läänemere Spordi Keskus
                     </li>
                     <li>
                         <strong>Võistlus:</strong> Eesti Noorte Võistlused<br>
                         <strong>Kuupäev:</strong> 25. jaanuar 2025<br>
                         <strong>Aeg:</strong> 09:00<br>
-                        <strong>Asukoht:</strong> Pärnu Spordihoone<br>
-                        <strong>Kirjeldus:</strong> Noorte võrkpallurite võistlus erinevates vanuseklassides.
+                        <strong>Asukoht:</strong> Pärnu Spordihoone
                     </li>
                 </ul>
             </div>
         </div>
-
-        <!-- Võistluse lisamise vorm -->
-        <div class="add-competition-form">
-            <h2>Lisa uus võistlus</h2>
-            <form action="#" method="POST">
-                <input type="text" class="form-input" name="competition-name" placeholder="Võistluse nimi" required><br>
-                <input type="date" class="form-input" name="competition-date" required><br>
-                <input type="time" class="form-input" name="competition-time" required><br>
-                <input type="text" class="form-input" name="competition-location" placeholder="Asukoht" required><br>
-                <textarea class="form-input" name="competition-description" placeholder="Kirjeldus" rows="4" required></textarea><br>
-                <button type="submit" class="form-button">Lisa võistlus</button>
-            </form>
-        </div>
     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
