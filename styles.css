@@ -264,8 +264,8 @@ h2 {
     margin-top: 70px;
 }
 
-/* Võistluste loendi ja kalendri stiil */
-.competition-list {
+  /* Võistluste loendi ja kalendri stiil */
+  .competition-list {
     width: 80%;
     margin: 40px auto;
     padding: 20px;
@@ -316,6 +316,47 @@ h2 {
     cursor: pointer;
 }
 
+/* Võistluse lisamise vorm */
+.add-competition-form {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f4f4f4, #ffffff);
+}
+
+.add-competition-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+
+.form-button:hover {
+    background-color: #45a049;
+}
+
 /* Postituste ja piltide paigutus */
 @media (max-width: 768px) {
     .competition-list {
@@ -330,4 +371,3 @@ h2 {
     .calendar ul li {
         font-size: 1em;
     }
-}

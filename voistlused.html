@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Võistlused - Võrkpalli Blogi</title>
+    <title>Võistlused</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Menüükonteiner -->
+    <div class="menu">
+        <ul>
+            <li><a href="#">Avaleht</a></li>
+            <li><a href="#">Blogi</a></li>
+            <li><a href="#">Võistlused</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
 
-    <!-- Võistluste sisu -->
+    <!-- Sisu -->
     <div class="content">
         <h1>Võrkpalli Võistlused</h1>
         <p>Siit lehelt leiad infot kõikide tulevaste ja varasemate võrkpallivõistluste kohta. Hoia end kursis järgmiste üritustega!</p>
 
-        <!-- Tulevased võistlused -->
+        <!-- Võistluste loend ja kalender -->
         <div class="competition-list">
             <h2>Tulevased Võistlused</h2>
+
+            <!-- Kalender -->
             <div class="calendar">
                 <div class="calendar-header">
                     <span>Detsember 2024</span>
@@ -25,25 +36,117 @@
                         <strong>Võistlus:</strong> Eesti Meistrivõistlused<br>
                         <strong>Kuupäev:</strong> 15. detsember 2024<br>
                         <strong>Aeg:</strong> 10:00<br>
-                        <strong>Asukoht:</strong> Tallinna Spordihoone
+                        <strong>Asukoht:</strong> Tallinna Spordihoone<br>
+                        <strong>Kirjeldus:</strong> Eesti parimad võrkpallurid võistlevad tiitli nimel.
                     </li>
                     <li>
                         <strong>Võistlus:</strong> Eesti Karikavõistlused<br>
                         <strong>Kuupäev:</strong> 20. detsember 2024<br>
                         <strong>Aeg:</strong> 14:00<br>
-                        <strong>Asukoht:</strong> Tartu Läänemere Spordi Keskus
+                        <strong>Asukoht:</strong> Tartu Läänemere Spordi Keskus<br>
+                        <strong>Kirjeldus:</strong> Meeskonnad võistlevad Eesti karika nimel.
                     </li>
                     <li>
                         <strong>Võistlus:</strong> Eesti Noorte Võistlused<br>
                         <strong>Kuupäev:</strong> 25. jaanuar 2025<br>
                         <strong>Aeg:</strong> 09:00<br>
-                        <strong>Asukoht:</strong> Pärnu Spordihoone
+                        <strong>Asukoht:</strong> Pärnu Spordihoone<br>
+                        <strong>Kirjeldus:</strong> Noorte võrkpallurite võistlus erinevates vanuseklassides.
                     </li>
                 </ul>
             </div>
         </div>
+
+        <!-- Võistluse lisamise vorm -->
+        <div class="add-competition-form">
+            <h2>Lisa uus võistlus</h2>
+            <form action="#" method="POST">
+                <input type="text" class="form-input" name="competition-name" placeholder="Võistluse nimi" required><br>
+                <input type="date" class="form-input" name="competition-date" required><br>
+                <input type="time" class="form-input" name="competition-time" required><br>
+                <input type="text" class="form-input" name="competition-location" placeholder="Asukoht" required><br>
+                <textarea class="form-input" name="competition-description" placeholder="Kirjeldus" rows="4" required></textarea><br>
+                <button type="submit" class="form-button">Lisa võistlus</button>
+            </form>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <style>
+        /* Google fonti importimine */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Üldine stiil */
+        body {
+            font-family: "Kanit", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Päis ja menüü stiil */
+        h1, h2 {
+            text-align: center;
+            color: #000000; /* Muudetud värv mustaks */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #000000; /* Muudetud värv mustaks */
+            margin-bottom: 20px;
+        }
+
+        /* Menüükonteiner */
+        .menu {
+            background-color: #000000;
+            width: 100%;
+            z-index: 10;
+            padding: 10px 0;
+            position: fixed; /* Menüükonteiner jääb ekraani ülaossa */
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin: 0 20px;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+        }
+
+        .menu ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Sisu stiil */
+        .content {
+            padding: 20px;
+            text-align: center;
+            margin-top: 70px; /* Tagab, et sisu ei kattuks menüüga */
+        }
+    </style>
 </body>
 </html>
